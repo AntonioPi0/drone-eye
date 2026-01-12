@@ -52,8 +52,4 @@ The demo_optimization.py script executes the full workflow: loading the FP32 mod
 
 ```bash
 python demo_optimization.py
-``
-
-```bash
-python demo_optimization.py
 ```
