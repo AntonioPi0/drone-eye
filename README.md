@@ -23,3 +23,37 @@ Tests conducted on a MobileNetV2 architecture comparing the FP32 Baseline vs. th
 - **Data-Driven Calibration:** Improved fidelity score from 0.65 to 0.88 by calibrating the model with domain-specific drone landing imagery.
 - **Edge Deployment Ready:** Optimized for high-frequency control loops (>50Hz), essential for flight safety.
 
+## ⚙️ Installation & Usage
+
+### 1. Clone the Repository
+```bash
+git clone [https://github.com/your-username/drone-eye.git](https://github.com/your-username/drone-eye.git)
+cd drone-eye
+```
+
+```bash
+### 2. Setup the environment
+
+# Create a virtual environment
+python -m venv venv
+
+# Activate it
+# On Linux/macOS:
+source venv/bin/activate
+# On Windows:
+.\venv\Scripts\activate
+
+# Install required packages
+pip install -r requirements.txt
+```
+
+### 3. Run the optimization pipeline
+The demo_optimization.py script executes the full workflow: loading the FP32 model, performing FX Graph Mode Quantization, running benchmarks, and generating XAI heatmaps.
+
+```bash
+python demo_optimization.py
+``
+
+```bash
+python demo_optimization.py
+```
